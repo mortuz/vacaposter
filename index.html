@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ID Print</title>
+  <link rel="stylesheet" href="//cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <div class="container mt-5" id="widget" style="width: 420px; height: 594px; padding-top: 30px;">
+    <div class="row" style="width: 420px; height: 594px;">
+      <div class="col-md-12 text-center" style="background-color: #329BFF; height:5px; margin-top: -30px;">
+      </div>
+      <div class="col-md-12 details text-center">
+        <img style="margin-top: -50px;
+                  max-width: 150px;" src="./logo.png" alt="" srcset="">
+
+
+      </div>
+
+      <div class="col-md-12 details text-center">
+        <img style="margin-top: -10px;
+                max-width: 350px;
+            " src="./rome.png" alt="" srcset="">
+
+
+      </div>
+
+      <div class="col-md-12  text-center">
+
+        <p style="color: #212529;" contentEditable="true" id="name">As a guest of this accomodation<br>you can book
+          selected <b>tours & services</b><br>at discounted price on <b>Vacaplus</b></p>
+
+
+      </div>
+      <div class="col-md-12  text-center">
+
+        <p style="color: #212529;" contentEditable="true" id="name">Go to <b>https://vacaplus.com/guest</b><br>&
+          <br><b>insert the code:</b></p>
+
+
+      </div>
+      <div class="col-md-12  text-center" style="margin-top: -30px">
+
+        <input contentEditable="true" type="text" name="" id="" placeholder="input code here" class="text-center"
+          style="background-color: #f7f7f7; font-size:20px; color: #329BFF; font-weight:bold; border-radius: 4px; border: none; padding-top: 10px; padding-bottom: 10px; ">
+
+
+      </div>
+
+      <div class="col-md-12  text-center">
+
+        <p style="color: #212529;" contentEditable="true" id="name"><b>We wish you an unforgettable stay!</b></p>
+
+
+      </div>
+
+      <div class="col-md-12 text-center" style="background-color: #212529; height:25px;margin-top: -6px;">
+        <p contentEditable="true" style="padding-top: 5px;
+                  font-size: 7px; color: white;">For further informations, contact info@vacaplus.com or call us at +39-06-88817458</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row mt-5 text-center">
+      <input type="button" id="btnSave" class="mx-auto" value="Save PNG" />
+    </div>
+  </div>
+
+  <div id="img-out" class="mt-5 text-center"></div>
+
+  <input type="file" name="" id="image" hidden accept="image">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/html2canvas.js"></script>
+  <script src="./js/canvas2image.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
